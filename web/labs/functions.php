@@ -106,12 +106,13 @@ function smokeToSitemap($input)
             . '</url>' . "\n";
         $count++;
 
-        if ($count > 10) {
-            $priority = '0.69';
-        }
         if ($count > 0) {
             $priority = '0.85';
         }
+        if ($count > 10) {
+            $priority = '0.69';
+        }
+
 
     }
 
