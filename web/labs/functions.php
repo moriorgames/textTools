@@ -4,6 +4,7 @@ $functions = array();
 
 $functions['getGoogleLinks'] = 'Extract Google links';
 $functions['googleLinksSmokeTest'] = 'Extract Google links with smoke test output';
+$functions['smokeToSitemap'] = 'Convert smoke links to sitemap output';
 
 /**
  * @param string $html
@@ -77,4 +78,44 @@ function googleLinksSmokeTest($html, $limit = 100)
 
     }
 
+}
+
+function smokeToSitemap($input)
+{
+    $matches = [];
+    $pattern = '/smoke_url_ok \"(.*)\"/';
+
+    preg_match_all($pattern, $input, $matches);
+
+    $links = $matches[1];
+
+    $output = '';
+    $output .= '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+    $output .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
+        . ' xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" '
+        . ' xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">' . "\n";
+
+    $count = 0;
+    $priority = '1.00';
+    foreach ($links as $link) {
+
+        $output .= '<url>'
+            . '<loc>' . $link . '</loc>'
+            . '<changefreq>daily</changefreq>'
+            . '<priority>' . $priority . '</priority>'
+            . '</url>' . "\n";
+        $count++;
+
+        if ($count > 10) {
+            $priority = '0.69';
+        }
+        if ($count > 0) {
+            $priority = '0.85';
+        }
+
+    }
+
+    $output .= '</urlset>' . "\n";
+
+    echo htmlentities($output);
 }
