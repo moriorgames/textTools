@@ -21,9 +21,11 @@ Consideraciones acerca de Sonata Page bundle, enrutadores
 Una de las virtudes de Sonata Page Bundle, es que nos permite crear **páginas dinámicas desde el panel de control** para nuestra aplicación Symfony.
 Según la filosofía de Sonata Page Bundle, las páginas se componen de **secciones que alojan bloques**.
 Nuestra tarea como programadores es crear el código fuente que compone estos bloques que serán **servicios de Symfony** y que podrán ejecutar cualquier acción que necesitemos. Estos bloques son **reutilizables** y **configurables**.
+
 Sin embargo, Sonata Page Bundle, debe interceptar las peticiones que pasan por la aplicación con el objetivo de crear esas páginas dinámicamente.
 Cuando trabajamos con Sonata Page Bundle no crearemos ni controladores ni rutas para nuestras páginas, aunque internamente existirán. 
 Sonata se encarga de interceptar todas las rutas que pasan por la aplicación e intenta averiguar si hemos creado una página que haga **match** con esa ruta.
+
 Esto quiere decir que el enrutado de las páginas de Sonata es automático y pasa direcamente desde la base de datos a la aplicación.
 Esta convención no siempre sirve a nuestro propósito, ya que, a veces, debemos crear páginas propias, pasando por encima de Sonata y yendo directamente a nuestra aplicación, para ello utilizaremos el ignore routes de la configuración de sonata:
 
