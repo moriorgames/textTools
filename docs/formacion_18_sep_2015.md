@@ -4,7 +4,7 @@ Formación 18 sep 2015: Sonata Page, Block y creación e inyección de servicios
 En la formación que hemos dado hoy 18 de Septiembre hemos tratado varios temas claves:
 
 - [Consideraciones acerca de Sonata Page bundle, enrutadores](formacion_18_sep_2015.md#consideraciones-acerca-de-sonata-page-bundle-enrutadores)
-- [Cómo crear páginas con Sonata Page bundle desde el administrador](formacion_18_sep_2015.md##como-crear-paginas-con-sonata-page-bundle-desde-el-administrador)
+- [Cómo crear páginas con Sonata Page bundle desde el administrador](formacion_18_sep_2015.md#como-crear-paginas-con-sonata-page-bundle-desde-el-administrador)
 
 
 **ANEXO**
@@ -60,17 +60,17 @@ Como que esta parte es sencilla la explicaremos a base de imágenes:
 1 - Primero accedemos a nuestro panel de control
 ![Menú principal de sonata](https://github.com/moriorgames/textTools/blob/master/docs/images/menu-principal-sonata-page.png)
 
-2 - Primero accedemos a nuestro panel de control
-![Menú principal de sonata](https://github.com/moriorgames/textTools/blob/master/docs/images/menu-principal-sonata-page.png)
+2 - Vamos hacia **menú -> portadas -> páginas**
+![Menú principal de sonata](https://github.com/moriorgames/textTools/blob/master/docs/images/sitio-paginas.png)
 
-3 - Primero accedemos a nuestro panel de control
-![Menú principal de sonata](https://github.com/moriorgames/textTools/blob/master/docs/images/menu-principal-sonata-page.png)
+3 - A la derecha en acciones tenemos el botón **Acciones -> agregar nuevo**
+![Menú principal de sonata](https://github.com/moriorgames/textTools/blob/master/docs/images/sitio-paginas-crear-nuevo.png)
 
-4 - Primero accedemos a nuestro panel de control
-![Menú principal de sonata](https://github.com/moriorgames/textTools/blob/master/docs/images/menu-principal-sonata-page.png)
+4 - Seguidamente creamos nuestra nueva página, le añadimos un **nombre**, **activo** (true), le podemos asignar una **página padre** (recomendado), añadimos un **slug**, un **title** y un **description**.
+![Menú principal de sonata](https://github.com/moriorgames/textTools/blob/master/docs/images/crear-nueva-pagina.png)
 
-5 - Primero accedemos a nuestro panel de control
-![Menú principal de sonata](https://github.com/moriorgames/textTools/blob/master/docs/images/menu-principal-sonata-page.png)
+5 - Finalmente le damos a crear, recordad ir a **crear impresiones** y ya podemos acceder a nuestra página creada.
+![Menú principal de sonata](https://github.com/moriorgames/textTools/blob/master/docs/images/nuestra-nueva-pagina-creada.png)
 
 
 Bloque LastPostBlock
