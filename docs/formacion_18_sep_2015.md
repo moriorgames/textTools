@@ -4,7 +4,7 @@ Formación 18 sep 2015: Sonata Page, Block y creación e inyección de servicios
 En la formación que hemos dado hoy 18 de Septiembre hemos tratado varios temas claves:
 
 - [Consideraciones acerca de Sonata Page bundle, enrutadores](formacion_18_sep_2015.md#consideraciones-acerca-de-sonata-page-bundle-enrutadores)
-- [Cómo crear páginas con Sonata Page bundle desde el administrador](formacion_18_sep_2015.md#como-crear-paginas-con-sonata-page-bundle-desde-el-administrador)
+- [Cómo crear páginas con Sonata Page bundle desde el administrador](formacion_18_sep_2015.md#cómo-crear-páginas-con-sonata-page-bundle-desde-el-administrador)
 
 
 **ANEXO**
