@@ -3,8 +3,8 @@ Formación 18 sep 2015: Sonata Page, Block y creación e inyección de servicios
 
 En la formación que hemos dado hoy 18 de Septiembre hemos tratado varios temas claves:
 
-- [Consideraciones acerca de Sonata Page bundle, enrutadores](formacion_18_sep_2015.md)
-- [Cómo crear páginas con Sonata Page bundle desde el administrador](formacion_18_sep_2015.md)
+- [Consideraciones acerca de Sonata Page bundle, enrutadores](formacion_18_sep_2015.md#consideraciones-acerca-de-sonata-page-bundle-enrutadores)
+- [Cómo crear páginas con Sonata Page bundle desde el administrador](formacion_18_sep_2015.md##como-crear-paginas-con-sonata-page-bundle-desde-el-administrador)
 
 
 **ANEXO**
@@ -55,9 +55,22 @@ Cómo crear páginas con Sonata Page bundle desde el administrador
 Una vez nos ha quedado claro cómo funciona la teoría de podemos empezar a añadir páginas dinámicamente a nuestra aplicación gracias al panel de administración.
 Como que esta parte es sencilla la explicaremos a base de imágenes:
 
+**CREACIÓN DE PÁGINAS EN 5 SENCILLOS PASOS**
 
+1 - Primero accedemos a nuestro panel de control
+![Menú principal de sonata](https://github.com/moriorgames/textTools/blob/master/docs/images/menu-principal-sonata-page.png)
 
+2 - Primero accedemos a nuestro panel de control
+![Menú principal de sonata](https://github.com/moriorgames/textTools/blob/master/docs/images/menu-principal-sonata-page.png)
 
+3 - Primero accedemos a nuestro panel de control
+![Menú principal de sonata](https://github.com/moriorgames/textTools/blob/master/docs/images/menu-principal-sonata-page.png)
+
+4 - Primero accedemos a nuestro panel de control
+![Menú principal de sonata](https://github.com/moriorgames/textTools/blob/master/docs/images/menu-principal-sonata-page.png)
+
+5 - Primero accedemos a nuestro panel de control
+![Menú principal de sonata](https://github.com/moriorgames/textTools/blob/master/docs/images/menu-principal-sonata-page.png)
 
 
 Bloque LastPostBlock
