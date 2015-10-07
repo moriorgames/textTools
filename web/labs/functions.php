@@ -3,6 +3,7 @@
 $functions = array();
 
 $functions['getGoogleLinks'] = 'Extract Google links';
+$functions['getSitemapLinks'] = 'Extract Sitemap links';
 $functions['googleLinksSmokeTest'] = 'Extract Google links with smoke test output';
 $functions['smokeToSitemap'] = 'Convert smoke links to sitemap output';
 $functions['getH1TagsFromGoogleList'] = 'Extract google links and count the h1 tags';
@@ -75,9 +76,53 @@ function countH1Tags($link)
     echo '<br />';
 }
 
+function sitemapLinks($html, $limit = 100)
+{
+    $links = [];
+
+    /*** a new dom object ***/
+    $dom = new domDocument;
+    $dom->loadHTML($html);
+
+    $items = $dom->getElementsByTagName('loc');
+
+    /** @var DOMNode $item */
+    foreach ($items as $item) {
+
+        if ($item->hasChildNodes()) {
+
+            $child = $item->childNodes;
+
+            foreach ($child as $i) {
+
+                $links[] = $i->wholeText;
+
+            }
+
+        }
+
+    }
+
+    return $links;
+}
+
 function getGoogleLinks($html, $limit = 100)
 {
     $links = googleLinks($html, $limit);
+
+    echo "SKIPPED LINKS MORE THAN $limit CHARS!<br />";
+    foreach ($links as $link) {
+
+        echo $link;
+        echo '<br />';
+
+    }
+
+}
+
+function getSitemapLinks($content, $limit = 100)
+{
+    $links = sitemapLinks($content, $limit);
 
     echo "SKIPPED LINKS MORE THAN $limit CHARS!<br />";
     foreach ($links as $link) {
