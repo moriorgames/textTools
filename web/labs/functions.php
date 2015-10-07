@@ -5,6 +5,7 @@ $functions = array();
 $functions['getGoogleLinks'] = 'Extract Google links';
 $functions['googleLinksSmokeTest'] = 'Extract Google links with smoke test output';
 $functions['smokeToSitemap'] = 'Convert smoke links to sitemap output';
+$functions['getH1TagsFromGoogleList'] = 'Extract google links and count the h1 tags';
 
 /**
  * @param string $html
@@ -48,6 +49,30 @@ function googleLinks($html, $limit = 100)
     }
 
     return $links;
+}
+
+function getH1TagsFromGoogleList($html, $limit = 100)
+{
+    $links = googleLinks($html, $limit);
+
+    echo "SKIPPED LINKS MORE THAN $limit CHARS!<br />";
+    foreach ($links as $link) {
+
+        ob_end_flush();
+
+        countH1Tags($link);
+
+        ob_start();
+
+    }
+}
+
+function countH1Tags($link)
+{
+    $content = file_get_contents($link);
+
+    echo $link . ' : <b>' . substr_count ($content, '</h1>') . ' "h1"</b> times found';
+    echo '<br />';
 }
 
 function getGoogleLinks($html, $limit = 100)
