@@ -18,7 +18,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
  * @author Morior <moriorgames@gmail.com>
  * @package AppBundle\Controller
  */
-class SolidController extends Controller
+class SolidPrinciplesController extends Controller
 {
     /**
      * This is an example of how you have to implement
